@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="container mx-auto mt-5 raleway flex justify-center items-center">
+    <header id="header" class="container mx-auto mt-5 raleway flex justify-center items-center">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -49,7 +49,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="main">
 
         <!-- Hero Section -->
         <div class="container mt-12 px-6 lg:px-0 mx-auto lg:mt-16">
@@ -62,9 +62,10 @@
                     <p class=" w-3/4 lg:w-2/3 inter text-sm lg:text-xl lg:font-light">You can travel with use for a safe
                         and good experience.You can contact us through our website and facebook pages.We are providing
                         the best travel experience.</p>
-                    <button
-                        class=" px-4 py-2 lg:px-8 lg:py-4  bg-[#1DD100] text-black rounded-lg border-none text-sm lg:text-xl font-bold">Buy
-                        Tickets</button>
+                    <!-- <button
+                    id="ticket-section" class=" px-4 py-2 lg:px-8 lg:py-4  bg-[#1DD100] text-black rounded-lg border-none text-sm lg:text-xl font-bold">Buy
+                        Tickets</button> -->
+                        <a href="#ticket-section" class=" px-4 py-2 lg:px-8 lg:py-4  bg-[#1DD100] text-black rounded-lg border-none text-sm lg:text-xl font-bold">Buy Tickets</a>
                 </div>
             </div>
         </div>
@@ -148,7 +149,7 @@
         </div>
 
         <!-- Ticket Section -->
-        <div class=" rounded-3xl border-[#1DD100] border-t-2">
+        <div id="ticket-section" class=" rounded-3xl border-[#1DD100] border-t-2">
             <div class="flex flex-col gap-5 text-center pt-20 mx-auto w-2/3">
                 <h2 class="raleway text-3xl lg:text-4xl font-bold text-black">P.H Paribahan</h2>
                 <p class=" inter lg:text-xl text-[#03071299]">You can travel with us because we are offering the safest
@@ -170,7 +171,7 @@
                         <div class="button">
                             <div class="flex gap-2 bg-[#1DD1001A] px-6 py-4 rounded-xl">
                                 <img src="./images/seat-green.png" alt="">
-                                <h2 class="text-[#1DD100] inter text-lg lg:text-xl font-semibold">40 Seats left</h2>
+                                <h2 class="text-[#1DD100] inter text-lg lg:text-xl font-semibold"><span id="total-seat">36</span> Seats left</h2>
                             </div>
                         </div>
                     </div>
@@ -260,43 +261,43 @@
                             </div>
                             <div class="col-span-5">
                                 <div class="grid grid-cols-4 gap-5 inter text-[#03071280] text-xl">
-                                    <div class="seat text-center p-4 cursor-pointer ">A1</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">A2</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">A3</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">A4</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">B1</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">B2</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">B3</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">B4</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">C1</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">C2</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">C3</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">C4</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">D1</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">D2</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">D3</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">D4</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">E1</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">E2</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">E3</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">E4</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">F1</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">F2</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">F3</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">F4</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">G1</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">G2</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">G3</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">G4</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">H1</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">H2</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">H3</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">H4</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">I1</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">I2</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">I3</div>
-                                    <div class="seat text-center p-4 cursor-pointer ">I4</div>
-                                </div>
+                                    <button id="A1" class="seat p-4 rounded-xl">A1</button>
+                                    <button id="A2" class="seat p-4 rounded-xl">A2</button>
+                                    <button id="A3" class="seat p-4 rounded-xl">A3</button>
+                                    <button id="A4" class="seat p-4 rounded-xl">A4</button>
+                                    <button id="B1" class="seat p-4 rounded-xl">B1</button>
+                                    <button id="B2" class="seat p-4 rounded-xl">B2</button>
+                                    <button id="B3" class="seat p-4 rounded-xl">B3</button>
+                                    <button id="B4" class="seat p-4 rounded-xl">B4</button>
+                                    <button id="C1" class="seat p-4 rounded-xl">C1</button>
+                                    <button id="C2" class="seat p-4 rounded-xl">C2</button>
+                                    <button id="C3" class="seat p-4 rounded-xl">C3</button>
+                                    <button id="C4" class="seat p-4 rounded-xl">C4</button>
+                                    <button id="D1" class="seat p-4 rounded-xl">D1</button>
+                                    <button id="D2" class="seat p-4 rounded-xl">D2</button>
+                                    <button id="D3" class="seat p-4 rounded-xl">D3</button>
+                                    <button id="D4" class="seat p-4 rounded-xl">D4</button>
+                                    <button id="E1" class="seat p-4 rounded-xl">E1</button>
+                                    <button id="E2" class="seat p-4 rounded-xl">E2</button>
+                                    <button id="E3" class="seat p-4 rounded-xl">E3</button>
+                                    <button id="E4" class="seat p-4 rounded-xl">E4</button>
+                                    <button id="F1" class="seat p-4 rounded-xl">F1</button>
+                                    <button id="F2" class="seat p-4 rounded-xl">F2</button>
+                                    <button id="F3" class="seat p-4 rounded-xl">F3</button>
+                                    <button id="F4" class="seat p-4 rounded-xl">F4</button>
+                                    <button id="G1" class="seat p-4 rounded-xl">G1</button>
+                                    <button id="G2" class="seat p-4 rounded-xl">G2</button>
+                                    <button id="G3" class="seat p-4 rounded-xl">G3</button>
+                                    <button id="G4" class="seat p-4 rounded-xl">G4</button>
+                                    <button id="H1" class="seat p-4 rounded-xl">H1</button>
+                                    <button id="H2" class="seat p-4 rounded-xl">H2</button>
+                                    <button id="H3" class="seat p-4 rounded-xl">H3</button>
+                                    <button id="H4" class="seat p-4 rounded-xl">H4</button>
+                                    <button id="I1" class="seat p-4 rounded-xl">I1</button>
+                                    <button id="I2" class="seat p-4 rounded-xl">I2</button>
+                                    <button id="I3" class="seat p-4 rounded-xl">I3</button>
+                                    <button id="I4" class="seat p-4 rounded-xl">I4</button>
+                                </div> 
                             </div>
 
                         </div>
@@ -312,7 +313,7 @@
                             <div class="col-span-4 grid grid-cols-2 gap-5">
                                 <div class="flex gap-2">
                                     <h2 class="inter text-xl">Seat</h2>
-                                    <div class="bg-green-500 px-4 rounded-md">2</div>
+                                    <div id="current-seat" class="bg-green-500 px-4 rounded-md">0</div>
                                 </div>
                                 <div>
                                     <h2 class="inter text-xl text-center">Class</h2>
@@ -328,18 +329,7 @@
 
                         <!-- Seat Status -->
 
-
-                        <div id="seat-status" class="flex gap-5 flex-col">
-                            <div class="flex justify-between px-8 inter">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div>
-                            <div class="flex justify-between px-8 inter">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div>
+                        <div id="seat-container" class="flex gap-5 flex-col">
                         </div>
                         <div class="lg:border-t lg:border lg:border-[#03071233] "></div>
 
@@ -349,14 +339,25 @@
                                 <h2>Total Price</h2>
                             </div>
                             <div>
-                                <h2>BDT <span id="total-price">1100</span></h2>
+                                <h2>BDT <span id="total-price">0</span></h2>
+                            </div>
+                        </div>
+
+                        <!-- Discounted Price -->
+
+                        <div id="discount-container" class=" hidden flex justify-between px-6 inter font-bold">
+                            <div>
+                                <h2>Discounted Price</h2>
+                            </div>
+                            <div>
+                                <h2>BDT <span id="discount-price">0</span></h2>
                             </div>
                         </div>
                         <!-- Input -->
-                        <div class="px-6 flex gap-2 justify-between">
-                            <input type="text" placeholder="Have any coupon?"
+                        <div id="input-container" class="px-6 flex gap-2 justify-between">
+                            <input id="input-field" type="text" placeholder="Have any coupon?"
                                 class="input inter text-[#03071266] input-bordered w-full" />
-                            <button class="btn inter bg-[#1DD100]">Apply</button>
+                            <button disabled id="coupon-btn" class="btn inter bg-[#1DD100]">Apply</button>
                         </div>
 
                         <!-- Grand Total -->
@@ -366,7 +367,7 @@
                                 <h2>Grand Price</h2>
                             </div>
                             <div>
-                                <h2>BDT <span id="total-price">1100</span></h2>
+                                <h2>BDT <span id="grand-price">0</span></h2>
                             </div>
                         </div>
 
@@ -380,7 +381,7 @@
                             </div>
                             <div class="inter space-y-4">
                                 <h2 class=" font-bold ">Phone Number*</h2>
-                                <input type="number" placeholder="Enter your phone number"
+                                <input id="number" type="number" placeholder="Enter your phone number"
                                     class="input inter text-[#03071266] input-bordered w-full" />
                             </div>
                             <div class="inter space-y-4">
@@ -389,8 +390,8 @@
                                     class="input inter text-[#03071266] input-bordered w-full" />
                             </div>
                             <div>
-                                <button
-                                    class="btn w-full raleway font-extrabold text-white text-lg lg:text-xl bg-[#1DD100]">Next</button>
+                                <button id="next-btn"
+                                    class="btn w-full raleway font-extrabold text-white text-lg lg:text-xl bg-[#1DD100]" disabled>Next</button>
                             </div>
                             <div
                                 class="inter text-[#03071266] flex justify-evenly lg:justify-between lg:px-6 underline cursor-pointer">
@@ -407,8 +408,12 @@
             </div>
         </div>
 
-        <!-- Success Section -->
-        <div class="flex px-6 lg:px-0 justify-center items-center flex-col min-h-screen gap-5 text-center ">
+       
+
+    </main>
+    <footer>
+         <!-- Success Section -->
+         <div id="success" class=" hidden flex px-6 lg:px-0 justify-center items-center flex-col min-h-screen gap-5 text-center ">
             <div class=" p-12 shadow-lg shadow-gray-400 lg:p-24 flex justify-center items-center flex-col gap-5 bg-[#413f3f09] rounded-xl">
                 <div>
                     <img src="./images/success.png" alt="">
@@ -423,15 +428,12 @@
                     <p class="roboto-regular text-xl text-[#4A4A4ACC]">Shortly you will find a confirmation in your email.</p>
                 </div>
                 <div>
-                    <button class="bg-[#27AE60] roboto-medium text-xl text-white px-24 py-4 rounded-full">Continue</button>
+                    <button id="continue" class="bg-[#27AE60] roboto-medium text-xl text-white px-24 py-4 rounded-full">Continue</button>
                 </div>
             </div>
         </div>
-
-    </main>
-    <footer>
         <!-- Footer Section -->
-        <div class="mt-12 lg:mt-20 bg-[#030712] text-white px-12 py-20 lg:px-28 lg:py-32">
+        <div id="footer" class="mt-12 lg:mt-20 bg-[#030712] text-white px-12 py-20 lg:px-28 lg:py-32">
             <div class="flex gap-5 justify-between">
                 <div class="flex flex-col gap-5">
                     <h2 class="raleway text-2xl lg:text-4xl font-extrabold">E-Ticket</h2>
@@ -462,6 +464,7 @@
             </div>
         </div>
     </footer>
+    <script src="srcipt.js"></script>
 </body>
 
 </html>

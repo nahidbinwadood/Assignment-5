@@ -3,18 +3,21 @@ let count=0;
 for (const button of ticketButtons) {
     button.addEventListener('click', function (e) {
 
+        
         //Total Seat:
         const totalSeat = document.getElementById('total-seat');
-        const updatedSeat = parseInt(totalSeat.innerText) - 1;
-        totalSeat.innerText = updatedSeat;
+        
 
-        const buttonId = button.innerText;
-
-        if(totalSeat.innerText<32){
+        if(totalSeat.innerText<=32){
             alert('You cant buy more than 4 ticket !');
             buttonId.setAttribute('disabled',true);
             return;
         }
+
+        //Updating Total Seats:
+        const updatedSeat = parseInt(totalSeat.innerText) - 1;
+        totalSeat.innerText = updatedSeat;
+        const buttonId = button.innerText;
         
         setBgColor(buttonId);
         setTextColor(buttonId);

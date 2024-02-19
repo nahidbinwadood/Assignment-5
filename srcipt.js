@@ -11,12 +11,13 @@ for (const button of ticketButtons) {
         const buttonId = button.innerText;
 
         if(totalSeat.innerText<32){
-            alert('You cant Buy More than 4 ticket')
+            alert('You cant buy more than 4 ticket !');
             buttonId.setAttribute('disabled',true);
             return;
         }
         
         setBgColor(buttonId);
+        setTextColor(buttonId);
 
         //Appending The seat Info::
 
@@ -147,6 +148,9 @@ for (const button of ticketButtons) {
 
 function setBgColor(id) {
     document.getElementById(id).classList.add('bg-green-500')
+}
+function setTextColor(id) {
+    document.getElementById(id).classList.add('text-white')
 }
 
 function hideElementByID(id){

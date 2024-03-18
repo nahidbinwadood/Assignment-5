@@ -133,18 +133,6 @@ for (const button of ticketButtons) {
     })
 
     document.getElementById('continue').addEventListener('click',function(){
-        // hideElementByID('success');
-        // hideElementByID('discount-container');
-        // showElementByID('main');
-        // showElementByID('input-container');
-        // showElementByID('header');
-        // showElementByID('footer');
-        // setValueByID("total-seat",36);
-        // setValueByID("current-seat",0);
-        // setValueByID("total-price",0);
-        // setValueByID("grand-price",0);
-        // setValueByID("discount-price",0);
-        // setValueByID("input-field"," ");
         window.location.reload();
 
     })

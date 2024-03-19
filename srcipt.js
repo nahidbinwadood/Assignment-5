@@ -124,7 +124,6 @@ for (const button of ticketButtons) {
 
 
     // Success Section:
-
     document.getElementById('next-btn').addEventListener('click',function(){
         hideElementByID('main');
         hideElementByID('header');
